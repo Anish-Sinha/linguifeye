@@ -8,15 +8,18 @@ public class Capture
 {
     public static void main(String[] args) throws IOException 
 	{
+	/*	Webcam.getWebcams(); */
 	    //Lists names of webcams connected to computer
-	    for (Webcam w : Webcam.getWebcams()) 
-	    {
-            System.out.println(w.getName());
-        }
-	    
-        Webcam webcam = Webcam.getWebcamByName("Live! Cam Sync HD VF0770 0");
+//	    for (Webcam w : Webcam.getWebcams()) 
+//	    
+//	    {
+		Webcam w;
+            	System.out.println(w.getName());
+//	    }
+	
+        /*Webcam webcam = Webcam.getDefault();
         webcam.open();
         ImageIO.write(webcam.getImage(), "JPG", new File("firstCapture.jpg"));
-        webcam.close();
+        webcam.close();*/
     }
 }
